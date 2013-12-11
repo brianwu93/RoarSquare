@@ -518,6 +518,9 @@ function createNewItinerary() {
 		for (var i = 0; i < itineraries.length; i++) {
 			$('#itinerary-dropdown').append("<li><a id=\"saveditinerary" + i + "\" onclick=\"reloadItinerary(" + i + ")\">"+ itineraries[i].name + "</a></li>");
 		}
+	} else {
+		$('#itinerary-dropdown').html("");
+		$('#itinerary-dropdown').append("<li><a>Make a new itinerary!</a></li>");
 	}
 }
 
